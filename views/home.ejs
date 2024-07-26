@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= restaurant.name %></title>
+</head>
+<body>
+    <%- include('./partials/nav') %>
+
+  <!---
+  Exercise 1: Create a homepage
+  Create a view
+  Create an home.ejs file inside of your views directory. Once created, add the following boilerplate:
+  
+  Modify the route
+  Now modify the existing route that handles the homepage / request. Update this route to render 
+  the home.ejs template in response to a request.
+  
+  Send data to view
+  Using the locals object, send the RESTAURANT data from server.js to the home.ejs view.
+  
+  Using EJS tags, update your HTML to display the restaurant details. Include name, address, and phone.
+  
+  Update the <title> of your home page to dynamically match the restaurant name.
+--->
+<h1>Welcome to <%= restaurant.name %></h1>
+  <p>Address: <%= restaurant.address %></p>
+  <p>Phone: <%= restaurant.phone %></p>
+  
+</body>
+</html>
